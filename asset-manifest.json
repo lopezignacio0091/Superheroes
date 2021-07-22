@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/lopezignacio0091/Superheroes/static/css/main.943fd04f.chunk.css",
+    "main.js": "/lopezignacio0091/Superheroes/static/js/main.6133c391.chunk.js",
+    "main.js.map": "/lopezignacio0091/Superheroes/static/js/main.6133c391.chunk.js.map",
+    "runtime-main.js": "/lopezignacio0091/Superheroes/static/js/runtime-main.fec9b4ba.js",
+    "runtime-main.js.map": "/lopezignacio0091/Superheroes/static/js/runtime-main.fec9b4ba.js.map",
+    "static/js/2.36f910d1.chunk.js": "/lopezignacio0091/Superheroes/static/js/2.36f910d1.chunk.js",
+    "static/js/2.36f910d1.chunk.js.map": "/lopezignacio0091/Superheroes/static/js/2.36f910d1.chunk.js.map",
+    "index.html": "/lopezignacio0091/Superheroes/index.html",
+    "precache-manifest.6ee9e8c9b0da89bd07a145189d76953c.js": "/lopezignacio0091/Superheroes/precache-manifest.6ee9e8c9b0da89bd07a145189d76953c.js",
+    "service-worker.js": "/lopezignacio0091/Superheroes/service-worker.js",
+    "static/css/main.943fd04f.chunk.css.map": "/lopezignacio0091/Superheroes/static/css/main.943fd04f.chunk.css.map",
+    "static/js/2.36f910d1.chunk.js.LICENSE.txt": "/lopezignacio0091/Superheroes/static/js/2.36f910d1.chunk.js.LICENSE.txt",
+    "static/media/CLARK-KENT-vs-SUPERMAN.jpg": "/lopezignacio0091/Superheroes/static/media/CLARK-KENT-vs-SUPERMAN.9d0ed200.jpg",
+    "static/media/superheroes-marvel.jpg": "/lopezignacio0091/Superheroes/static/media/superheroes-marvel.22f71ef2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fec9b4ba.js",
+    "static/js/2.36f910d1.chunk.js",
+    "static/css/main.943fd04f.chunk.css",
+    "static/js/main.6133c391.chunk.js"
+  ]
+}
