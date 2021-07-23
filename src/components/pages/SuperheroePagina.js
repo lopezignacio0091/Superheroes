@@ -1,7 +1,7 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
 import { useDispatch ,useSelector } from 'react-redux';
-import {abrirFormularioUsuario, cerrarMensajeSuperheroe,abrirViewDetail} from '../../actions/SuperheroeActions'; 
+import {abrirFormularioSuperheroe, cerrarMensajeSuperheroe,abrirViewDetail} from '../../actions/SuperheroeActions'; 
 import {abrirChart,abrirChartPromedio} from '../../actions/ChartActions';
 import FormularioUsuario from '../layout/usuarios/form/FormularioUsuario';
 import DialogoGeneral from '../layout/utils/dialogUtil/DialogGeneral';

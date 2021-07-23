@@ -76,6 +76,8 @@ const UsuarioReducer = (state = initialState, action) => {
                 ...state,
                 abrirFormularioStatus: action.payload,
                 tituloFormulario: 'Nuevo Usuario',
+                loadingHeroe:false,
+                errorSuperHeroe:false,
                 usuarioEdit: {},
                 editStatus: false,
             };

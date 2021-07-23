@@ -31,6 +31,9 @@ export const getSuperheroes = () => async dispatch => {
             const { data } = await axiosInstance.get(`${GET_TOKEN}/`+parseInt(Math.random() * (730 - 1) + 1));
                 array.push(SuperHeroeDTO.getSuperHeroe(data));
             }
+
+      
+        
             dispatch({
                 type: GET_USERS,
                 payload: array

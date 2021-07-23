@@ -10,7 +10,7 @@ const NuevoUsuario = () => {
     return (
         <Fragment >
             <div style={{ order: -1 }}>
-                <BotonNuevo  accion={() => dispatch(abrirFormularioSuperheroe(true))} classButton={"buttonStyleMoneda"} label={'Nuevo Superheroe'} />
+                <BotonNuevo  accion={() => dispatch(abrirFormularioSuperheroe(true))} classButton={"buttonStyleTableMoneda"} label={'Nuevo Superheroe'} />
             </div>
         </Fragment>
     );
