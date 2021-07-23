@@ -115,7 +115,7 @@ const TablaSuperheroes = () => {
 
   const options = {
     selectableRows: 'none',
-    download: true,
+    download: false,
     print: false,
     filter: true,
     confirmFilters: false,

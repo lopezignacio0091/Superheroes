@@ -86,7 +86,7 @@ export default makeStyles((theme) => ({
         lineHeight: '16px',
         textAlign: 'center',
         color: '#FFFFFF',
-        width: '100%',
+        width: '88%',
         height: '40px',
         textTransform: 'none',
         fontFamily: "Titillium Web",
