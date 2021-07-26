@@ -4,12 +4,12 @@ import {
     SET_NEW_USER,
     LOADING_SUPER,
     SEARCH_HEROE,
-    HEROE_NOT_FOUND
+    HEROE_NOT_FOUND,
+    GET_TOKEN
 } from './types';
 import UserDTO from './DTO/SuperHeroeDTO';
-import axios from 'axios';
 import _ from "lodash";
-
+import axiosInstance from '../helpers/axiosInstance';
 
 export const setLoading = () => {
     return {
@@ -37,7 +37,7 @@ export const createUser = (data) => async dispatch => {
 
 export const buscarHeroeApi = (heroe, setFieldValue, superHeroes) => async dispatch => {
 
-    const { data } = await axios.get('https://www.superheroapi.com/api.php/10225679446236377/search/' + heroe);
+    const { data } = await axiosInstance.get(`${GET_TOKEN}/search/`+heroe);
     let capacidad = false;
 
     if (data.response === 'error')
@@ -75,16 +75,11 @@ export const buscarHeroeApi = (heroe, setFieldValue, superHeroes) => async dispa
 
 const validarSuper = (superheroes, data) => {
 
-    let x = _.findLastIndex(superheroes, function (o) {
-        return o.id == data.results[0].id
-    })
-
+    let x = _.findLastIndex(superheroes, function (o) {return o.id == data.results[0].id});
     return (x <= 0) ? false : true;
 }
 
 const validarAlignment = (superheroes, data) => {
-    let x = _.sumBy(superheroes, function (o) {
-        return (o["aligment"] === data.results[0].biography.alignment) ? 1 : 0
-    });
+    let x = _.sumBy(superheroes, function (o) {return (o["aligment"] === data.results[0].biography.alignment) ? 1 : 0});
     return x;
 }

@@ -110,8 +110,6 @@ export const abrirViewDetail = (status) => dispatch => {
 }
 
 
-
-
 export const cerrarMensajeSuperheroe = () => dispatch => {
 
     dispatch({
