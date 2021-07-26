@@ -80,7 +80,7 @@ const validarSuper = (superheroes, data) => {
         return o.id == data.results[0].id
     })
 
-    return (x === 0) ? true : false;
+    return (x<=0) ?false  : true;
 }
 
 const validarAlignment = (superheroes, data) => {

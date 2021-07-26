@@ -32,15 +32,10 @@ export const getSuperheroes = () => async dispatch => {
                 array.push(SuperHeroeDTO.getSuperHeroe(data));
             }
 
-      
-        
             dispatch({
                 type: GET_USERS,
                 payload: array
             });
-        
-
-
     } catch (error) {
         dispatch({
             type: SET_ERROR,
@@ -122,7 +117,6 @@ export const cerrarMensajeSuperheroe = () => dispatch => {
     dispatch({
         type: CERRAR_MENSAJE,
     });
-
 }
 
 
