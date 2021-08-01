@@ -37,7 +37,7 @@ export const createUser = (data) => async dispatch => {
 
 export const buscarHeroeApi = (heroe, setFieldValue, superHeroes) => async dispatch => {
 
-    const { data } = await axiosInstance.get(`${GET_TOKEN}/search/`+heroe);
+    const { data } = await axiosInstance.get(`${GET_TOKEN}/search/` + heroe);
     let capacidad = false;
 
     if (data.response === 'error')
@@ -75,11 +75,11 @@ export const buscarHeroeApi = (heroe, setFieldValue, superHeroes) => async dispa
 
 const validarSuper = (superheroes, data) => {
 
-    let x = _.findLastIndex(superheroes, function (o) {return o.id == data.results[0].id});
+    let x = _.findLastIndex(superheroes, (o)=> { return o.id == data.results[0].id });
     return (x <= 0) ? false : true;
 }
 
 const validarAlignment = (superheroes, data) => {
-    let x = _.sumBy(superheroes, function (o) {return (o["aligment"] === data.results[0].biography.alignment) ? 1 : 0});
+    let x = _.sumBy(superheroes,  (o) =>{ return (o["aligment"] === data.results[0].biography.alignment) ? 1 : 0 });
     return x;
 }

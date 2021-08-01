@@ -10,6 +10,8 @@ import TablaSuperheroes from '../layout/usuarios/tablaSuperHeroes/TablaSuperHero
 import DetailSuperHeroe from '../layout/usuarios/detail/Detail';
 import Chart from '../layout/usuarios/chart/Chart';
 import ChartPromedio from '../layout/usuarios/chart/ChartPromedio';
+import Search from '../layout/search/Search';
+
 
 const SuperheroePage = () => {
 
@@ -23,6 +25,9 @@ const SuperheroePage = () => {
             <Grid>
                 <Mensaje open={mostrarMensaje} mensaje={textoMensaje} cerrarMsj={() => dispatch(cerrarMensajeSuperheroe())}/>
             </Grid>
+            {/* <Grid container item xs={4} sm={4} md={4} lg={4}>
+               <Search /> 
+            </Grid> */}
             <Grid container item xs={12} sm={12} md={12} lg={12}>
                 <TablaSuperheroes />
             </Grid>

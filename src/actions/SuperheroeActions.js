@@ -12,10 +12,8 @@ import {
 } from './types';
 
 import axiosInstance from '../helpers/axiosInstance';
-import JWT from '../Service/JWT';
-import axios from 'axios';
 import SuperHeroeDTO from './DTO/SuperHeroeDTO';
-
+import _ from 'lodash';
 
 export const setLoading = () => {
     return {
@@ -34,7 +32,7 @@ export const getSuperheroes = () => async dispatch => {
 
             dispatch({
                 type: GET_USERS,
-                payload: array
+                payload: _.orderBy(array, ['name'], ['asc'])
             });
     } catch (error) {
         dispatch({
